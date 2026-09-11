@@ -1,0 +1,775 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - LearnHub</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="courses.html">
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        My Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PROFILE PAGE
+    ========================== -->
+    <main>
+
+        <section class="profile-section">
+
+            <div class="profile-container">
+
+
+                <!-- =========================
+                     PROFILE HEADER
+                ========================== -->
+                <div class="profile-header">
+
+                    <div class="profile-avatar">
+                        S
+                    </div>
+
+                    <div class="profile-header-info">
+
+                        <h1>
+                            Student Name
+                        </h1>
+
+                        <p>
+                            student@example.com
+                        </p>
+
+                        <span>
+                            Student
+                        </span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="btn primary-btn"
+                        id="editProfileBtn"
+                    >
+                        ✏️ Edit Profile
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     PROFILE CONTENT
+                ========================== -->
+                <div class="profile-grid">
+
+
+                    <!-- =========================
+                         PERSONAL INFORMATION
+                    ========================== -->
+                    <div class="profile-card">
+
+                        <div class="profile-card-header">
+
+                            <div>
+                                <h2>
+                                    Personal Information
+                                </h2>
+
+                                <p>
+                                    Manage your personal details.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <form id="profileForm">
+
+                            <!-- Full Name -->
+                            <div class="form-group">
+
+                                <label for="profileName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profileName"
+                                    value="Student Name"
+                                    disabled
+                                >
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <label for="profileEmail">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="profileEmail"
+                                    value="student@example.com"
+                                    disabled
+                                >
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="form-group">
+
+                                <label for="profilePhone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="profilePhone"
+                                    value="+91 98765 43210"
+                                    disabled
+                                >
+
+                            </div>
+
+
+                            <!-- Location -->
+                            <div class="form-group">
+
+                                <label for="profileLocation">
+                                    Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profileLocation"
+                                    value="India"
+                                    disabled
+                                >
+
+                            </div>
+
+
+                            <!-- Save Button -->
+                            <button
+                                type="submit"
+                                class="btn primary-btn"
+                                id="saveProfileBtn"
+                                style="display: none;"
+                            >
+                                Save Changes
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- =========================
+                         LEARNING STATISTICS
+                    ========================== -->
+                    <div class="profile-card">
+
+                        <div class="profile-card-header">
+
+                            <div>
+
+                                <h2>
+                                    Learning Statistics
+                                </h2>
+
+                                <p>
+                                    Your learning progress.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-stat-list">
+
+
+                            <!-- Courses -->
+                            <div class="profile-stat">
+
+                                <div class="profile-stat-icon">
+                                    📚
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        3
+                                    </h3>
+
+                                    <p>
+                                        Enrolled Courses
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Completed -->
+                            <div class="profile-stat">
+
+                                <div class="profile-stat-icon">
+                                    ✅
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        1
+                                    </h3>
+
+                                    <p>
+                                        Completed Courses
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Hours -->
+                            <div class="profile-stat">
+
+                                <div class="profile-stat-icon">
+                                    ⏱️
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        24
+                                    </h3>
+
+                                    <p>
+                                        Learning Hours
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Certificates -->
+                            <div class="profile-stat">
+
+                                <div class="profile-stat-icon">
+                                    🏆
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        1
+                                    </h3>
+
+                                    <p>
+                                        Certificates
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         CHANGE PASSWORD
+                    ========================== -->
+                    <div class="profile-card">
+
+                        <div class="profile-card-header">
+
+                            <div>
+
+                                <h2>
+                                    Change Password
+                                </h2>
+
+                                <p>
+                                    Keep your account secure.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <form id="passwordForm">
+
+
+                            <!-- Current Password -->
+                            <div class="form-group">
+
+                                <label for="currentPassword">
+                                    Current Password
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="currentPassword"
+                                    placeholder="Enter current password"
+                                >
+
+                            </div>
+
+
+                            <!-- New Password -->
+                            <div class="form-group">
+
+                                <label for="newPassword">
+                                    New Password
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="newPassword"
+                                    placeholder="Enter new password"
+                                >
+
+                            </div>
+
+
+                            <!-- Confirm Password -->
+                            <div class="form-group">
+
+                                <label for="confirmNewPassword">
+                                    Confirm New Password
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="confirmNewPassword"
+                                    placeholder="Confirm new password"
+                                >
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn primary-btn"
+                            >
+                                Update Password
+                            </button>
+
+
+                            <p
+                                id="passwordMessage"
+                                class="password-message"
+                            ></p>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- =========================
+                         ACCOUNT SETTINGS
+                    ========================== -->
+                    <div class="profile-card">
+
+                        <div class="profile-card-header">
+
+                            <div>
+
+                                <h2>
+                                    Account Settings
+                                </h2>
+
+                                <p>
+                                    Manage your account preferences.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email Notifications -->
+                        <div class="setting-item">
+
+                            <div>
+
+                                <h3>
+                                    Email Notifications
+                                </h3>
+
+                                <p>
+                                    Receive updates about new courses
+                                    and learning activities.
+                                </p>
+
+                            </div>
+
+                            <label class="toggle-switch">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Course Reminders -->
+                        <div class="setting-item">
+
+                            <div>
+
+                                <h3>
+                                    Course Reminders
+                                </h3>
+
+                                <p>
+                                    Get reminders to continue your courses.
+                                </p>
+
+                            </div>
+
+                            <label class="toggle-switch">
+
+                                <input
+                                    type="checkbox"
+                                    checked
+                                >
+
+                                <span class="toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Public Profile -->
+                        <div class="setting-item">
+
+                            <div>
+
+                                <h3>
+                                    Public Profile
+                                </h3>
+
+                                <p>
+                                    Allow other students to view your profile.
+                                </p>
+
+                            </div>
+
+                            <label class="toggle-switch">
+
+                                <input
+                                    type="checkbox"
+                                >
+
+                                <span class="toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Logout -->
+                        <div class="profile-logout">
+
+                            <button
+                                type="button"
+                                class="logout-btn"
+                                id="logoutBtn"
+                            >
+                                🚪 Logout
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     CERTIFICATES
+                ========================== -->
+                <div class="profile-card certificates-card">
+
+                    <div class="profile-card-header">
+
+                        <div>
+
+                            <h2>
+                                My Certificates
+                            </h2>
+
+                            <p>
+                                Certificates you've earned.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="certificate-item">
+
+                        <div class="certificate-icon">
+                            🏆
+                        </div>
+
+                        <div class="certificate-info">
+
+                            <h3>
+                                UI/UX Design Fundamentals
+                            </h3>
+
+                            <p>
+                                Completed on August 20, 2026
+                            </p>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="secondary-btn"
+                            id="viewCertificateBtn"
+                        >
+                            View Certificate
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Back to Dashboard -->
+                <div class="profile-back">
+
+                    <a href="dashboard.html">
+                        ← Back to My Learning
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    LearnHub
+                </h3>
+
+                <p>
+                    Learn new skills and build your career
+                    with LearnHub online courses.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html">
+                            My Learning
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html">
+                            Profile
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    Email: support@learnhub.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

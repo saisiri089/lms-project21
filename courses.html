@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+```
+<!-- Responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Courses - LearnHub</title>
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="css/style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVIGATION BAR
+========================== -->
+<header>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="courses.html" class="active">
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">
+                    My Learning
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+        <!-- Authentication Buttons -->
+        <div class="nav-buttons">
+
+            <a
+                href="login.html"
+                class="btn login-btn"
+            >
+                Login
+            </a>
+
+            <a
+                href="register.html"
+                class="btn register-btn"
+            >
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     COURSES MAIN CONTENT
+========================== -->
+<main>
+
+
+    <!-- =========================
+         COURSES HERO
+    ========================== -->
+    <section class="courses-hero">
+
+        <div class="courses-hero-content">
+
+            <p class="section-label">
+                Explore & Learn
+            </p>
+
+            <h1>
+                Discover Courses
+            </h1>
+
+            <p>
+                Learn new skills from expert instructors
+                and take your career to the next level.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COURSE SEARCH & FILTER
+    ========================== -->
+    <section class="course-filter-section">
+
+        <div class="course-filter-container">
+
+
+            <!-- Search -->
+            <div class="course-search">
+
+                <label for="courseSearch">
+                    Search Courses
+                </label>
+
+                <input
+                    type="search"
+                    id="courseSearch"
+                    placeholder="Search for a course..."
+                >
+
+            </div>
+
+
+            <!-- Category Filter -->
+            <div class="course-filter">
+
+                <label for="categoryFilter">
+                    Category
+                </label>
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="development">
+                        Development
+                    </option>
+
+                    <option value="programming">
+                        Programming
+                    </option>
+
+                    <option value="design">
+                        Design
+                    </option>
+
+                    <option value="business">
+                        Business
+                    </option>
+
+                    <option value="marketing">
+                        Marketing
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Level Filter -->
+            <div class="course-filter">
+
+                <label for="levelFilter">
+                    Level
+                </label>
+
+                <select id="levelFilter">
+
+                    <option value="all">
+                        All Levels
+                    </option>
+
+                    <option value="beginner">
+                        Beginner
+                    </option>
+
+                    <option value="intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="advanced">
+                        Advanced
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COURSES SECTION
+    ========================== -->
+    <section class="courses-section">
+
+        <div class="section-title">
+
+            <p>
+                Learn Something New
+            </p>
+
+            <h2>
+                All Courses
+            </h2>
+
+        </div>
+
+
+        <!-- Course Grid -->
+        <div
+            class="course-container"
+            id="courseContainer"
+        >
+
+
+            <!-- =========================
+                 COURSE 1
+            ========================== -->
+            <article
+                class="course-card"
+                data-category="development"
+                data-level="beginner"
+            >
+
+                <div class="course-image">
+
+                    <img
+                        src="images/course1.jpg"
+                        alt="Full Stack Web Development"
+                    >
+
+                </div>
+
+
+                <div class="course-content">
+
+                    <span class="course-category">
+                        Development
+                    </span>
+
+                    <h3>
+                        Full Stack Web Development
+                    </h3>
+
+                    <p>
+                        Learn HTML, CSS, JavaScript,
+                        frontend and backend development.
+                    </p>
+
+
+                    <div class="instructor">
+
+                        <span>
+                            Instructor:
+                        </span>
+
+                        <strong>
+                            John Smith
+                        </strong>
+
+                    </div>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <span>
+                            24 Lessons
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹999
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn course-btn"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 COURSE 2
+            ========================== -->
+            <article
+                class="course-card"
+                data-category="programming"
+                data-level="beginner"
+            >
+
+                <div class="course-image">
+
+                    <img
+                        src="images/course2.jpg"
+                        alt="Python Programming"
+                    >
+
+                </div>
+
+
+                <div class="course-content">
+
+                    <span class="course-category">
+                        Programming
+                    </span>
+
+                    <h3>
+                        Python Programming
+                    </h3>
+
+                    <p>
+                        Learn Python programming from
+                        the basics and build real projects.
+                    </p>
+
+
+                    <div class="instructor">
+
+                        <span>
+                            Instructor:
+                        </span>
+
+                        <strong>
+                            Sarah Johnson
+                        </strong>
+
+                    </div>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                        <span>
+                            20 Lessons
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹799
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn course-btn"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 COURSE 3
+            ========================== -->
+            <article
+                class="course-card"
+                data-category="development"
+                data-level="intermediate"
+            >
+
+                <div class="course-image">
+
+                    <img
+                        src="images/course3.jpg"
+                        alt="JavaScript Masterclass"
+                    >
+
+                </div>
+
+
+                <div class="course-content">
+
+                    <span class="course-category">
+                        Development
+                    </span>
+
+                    <h3>
+                        JavaScript Masterclass
+                    </h3>
+
+                    <p>
+                        Master JavaScript and create
+                        interactive web applications.
+                    </p>
+
+
+                    <div class="instructor">
+
+                        <span>
+                            Instructor:
+                        </span>
+
+                        <strong>
+                            Michael Brown
+                        </strong>
+
+                    </div>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.9
+                        </span>
+
+                        <span>
+                            30 Lessons
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹899
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn course-btn"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 COURSE 4
+            ========================== -->
+            <article
+                class="course-card"
+                data-category="design"
+                data-level="beginner"
+            >
+
+                <div class="course-image">
+
+                    <img
+                        src="images/course4.jpg"
+                        alt="UI UX Design"
+                    >
+
+                </div>
+
+
+                <div class="course-content">
+
+                    <span class="course-category">
+                        Design
+                    </span>
+
+                    <h3>
+                        UI/UX Design Fundamentals
+                    </h3>
+
+                    <p>
+                        Learn the fundamentals of UI/UX
+                        design and create beautiful interfaces.
+                    </p>
+
+
+                    <div class="instructor">
+
+                        <span>
+                            Instructor:
+                        </span>
+
+                        <strong>
+                            Emily Davis
+                        </strong>
+
+                    </div>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.6
+                        </span>
+
+                        <span>
+                            18 Lessons
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹699
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn course-btn"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 COURSE 5
+            ========================== -->
+            <article
+                class="course-card"
+                data-category="business"
+                data-level="intermediate"
+            >
+
+                <div class="course-image">
+
+                    <img
+                        src="images/course5.jpg"
+                        alt="Business Management"
+                    >
+
+                </div>
+
+
+                <div class="course-content">
+
+                    <span class="course-category">
+                        Business
+                    </span>
+
+                    <h3>
+                        Business Management
+                    </h3>
+
+                    <p>
+                        Learn essential business management
+                        skills and leadership strategies.
+                    </p>
+
+
+                    <div class="instructor">
+
+                        <span>
+                            Instructor:
+                        </span>
+
+                        <strong>
+                            David Wilson
+                        </strong>
+
+                    </div>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.5
+                        </span>
+
+                        <span>
+                            16 Lessons
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹899
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn course-btn"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 COURSE 6
+            ========================== -->
+            <article
+                class="course-card"
+                data-category="marketing"
+                data-level="beginner"
+            >
+
+                <div class="course-image">
+
+                    <img
+                        src="images/course6.jpg"
+                        alt="Digital Marketing"
+                    >
+
+                </div>
+
+
+                <div class="course-content">
+
+                    <span class="course-category">
+                        Marketing
+                    </span>
+
+                    <h3>
+                        Digital Marketing
+                    </h3>
+
+                    <p>
+                        Learn SEO, social media marketing,
+                        content marketing and analytics.
+                    </p>
+
+
+                    <div class="instructor">
+
+                        <span>
+                            Instructor:
+                        </span>
+
+                        <strong>
+                            Olivia Taylor
+                        </strong>
+
+                    </div>
+
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <span>
+                            22 Lessons
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹749
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn course-btn"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- No Courses Message -->
+        <div
+            id="noCoursesMessage"
+            class="no-courses"
+            style="display: none;"
+        >
+
+            <h3>
+                No Courses Found
+            </h3>
+
+            <p>
+                Try changing your search or filter options.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         COURSE CATEGORIES
+    ========================== -->
+    <section class="categories-section">
+
+        <div class="section-title">
+
+            <p>
+                Explore Categories
+            </p>
+
+            <h2>
+                Learn By Category
+            </h2>
+
+        </div>
+
+
+        <div class="category-container">
+
+
+            <!-- Development -->
+            <a
+                href="#"
+                class="category-card"
+                data-category="development"
+            >
+
+                <div class="category-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Development
+                </h3>
+
+                <p>
+                    Web & Software Development
+                </p>
+
+            </a>
+
+
+            <!-- Programming -->
+            <a
+                href="#"
+                class="category-card"
+                data-category="programming"
+            >
+
+                <div class="category-icon">
+                    🐍
+                </div>
+
+                <h3>
+                    Programming
+                </h3>
+
+                <p>
+                    Learn Programming Languages
+                </p>
+
+            </a>
+
+
+            <!-- Design -->
+            <a
+                href="#"
+                class="category-card"
+                data-category="design"
+            >
+
+                <div class="category-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Design
+                </h3>
+
+                <p>
+                    UI/UX & Graphic Design
+                </p>
+
+            </a>
+
+
+            <!-- Business -->
+            <a
+                href="#"
+                class="category-card"
+                data-category="business"
+            >
+
+                <div class="category-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Business
+                </h3>
+
+                <p>
+                    Business & Management
+                </p>
+
+            </a>
+
+
+            <!-- Marketing -->
+            <a
+                href="#"
+                class="category-card"
+                data-category="marketing"
+            >
+
+                <div class="category-icon">
+                    📢
+                </div>
+
+                <h3>
+                    Marketing
+                </h3>
+
+                <p>
+                    Digital Marketing & SEO
+                </p>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <h2>
+                Start Learning Today
+            </h2>
+
+            <p>
+                Choose a course and start building
+                valuable skills for your future.
+            </p>
+
+            <a
+                href="register.html"
+                class="btn primary-btn"
+            >
+                Create Your Account
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- About -->
+        <div class="footer-column">
+
+            <h3>
+                LearnHub
+            </h3>
+
+            <p>
+                Learn new skills, build projects,
+                and achieve your career goals.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="courses.html">
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html">
+                        My Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Account -->
+        <div class="footer-column">
+
+            <h3>
+                Account
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="register.html">
+                        Register
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-column">
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <p>
+                Email: support@learnhub.com
+            </p>
+
+            <p>
+                Phone: +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 LearnHub.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Common JavaScript -->
+<script src="js/script.js"></script>
+```
+
+</body>
+
+</html>

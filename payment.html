@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment - LearnHub</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="dashboard.html">My Learning</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         PAYMENT PAGE
+    ========================== -->
+    <main>
+
+        <section class="payment-section">
+
+            <div class="payment-container">
+
+                <!-- =========================
+                     LEFT SIDE
+                ========================== -->
+                <div class="payment-left">
+
+                    <h1>Complete Your Purchase</h1>
+
+                    <p class="payment-subtitle">
+                        You're one step away from starting your learning journey.
+                    </p>
+
+
+                    <!-- Student Details -->
+                    <div class="payment-box">
+
+                        <h2>Student Details</h2>
+
+                        <div class="form-group">
+                            <label for="studentName">Full Name</label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                placeholder="Enter your full name"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="studentEmail">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="studentEmail"
+                                placeholder="Enter your email"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="studentPhone">Phone Number</label>
+
+                            <input
+                                type="tel"
+                                id="studentPhone"
+                                placeholder="Enter your phone number"
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- Course Summary -->
+                    <div class="payment-box">
+
+                        <h2>Course</h2>
+
+                        <div class="payment-course">
+
+                            <img
+                                src="images/course1.jpg"
+                                alt="Full Stack Web Development"
+                            >
+
+                            <div class="payment-course-info">
+
+                                <h3>Full Stack Web Development</h3>
+
+                                <p>
+                                    Learn HTML, CSS, JavaScript, frontend
+                                    and backend development.
+                                </p>
+
+                                <span class="course-price">
+                                    ₹999
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Coupon -->
+                    <div class="payment-box">
+
+                        <h2>Apply Coupon</h2>
+
+                        <div class="coupon-container">
+
+                            <input
+                                type="text"
+                                id="couponCode"
+                                placeholder="Enter coupon code"
+                            >
+
+                            <button
+                                type="button"
+                                class="secondary-btn"
+                                id="applyCouponBtn"
+                            >
+                                Apply
+                            </button>
+
+                        </div>
+
+                        <p id="couponMessage" class="coupon-message"></p>
+
+                    </div>
+
+
+                    <!-- Payment Method -->
+                    <div class="payment-box">
+
+                        <h2>Payment Method</h2>
+
+
+                        <!-- UPI -->
+                        <label class="payment-method">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="upi"
+                                checked
+                            >
+
+                            <span>
+                                <strong>UPI</strong>
+                                <small>Pay using Google Pay, PhonePe, Paytm etc.</small>
+                            </span>
+
+                        </label>
+
+
+                        <!-- Card -->
+                        <label class="payment-method">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="card"
+                            >
+
+                            <span>
+                                <strong>Credit / Debit Card</strong>
+                                <small>Visa, Mastercard, RuPay etc.</small>
+                            </span>
+
+                        </label>
+
+
+                        <!-- Net Banking -->
+                        <label class="payment-method">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="netbanking"
+                            >
+
+                            <span>
+                                <strong>Net Banking</strong>
+                                <small>Pay using your bank account.</small>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Demo Notice -->
+                    <div class="payment-demo">
+
+                        <strong>Demo Payment</strong>
+
+                        <p>
+                            This is a frontend demonstration.
+                            No real payment will be processed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     RIGHT SIDE
+                ========================== -->
+                <aside class="payment-right">
+
+                    <div class="order-summary">
+
+                        <h2>Order Summary</h2>
+
+
+                        <div class="summary-course">
+
+                            <span>Course</span>
+
+                            <span>
+                                Full Stack Web Development
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>Course Price</span>
+
+                            <span id="coursePrice">
+                                ₹999
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>Discount</span>
+
+                            <span id="discount">
+                                ₹0
+                            </span>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>Tax</span>
+
+                            <span>
+                                ₹0
+                            </span>
+
+                        </div>
+
+
+                        <hr>
+
+
+                        <div class="summary-total">
+
+                            <span>Total</span>
+
+                            <span id="totalAmount">
+                                ₹999
+                            </span>
+
+                        </div>
+
+
+                        <!-- Pay Button -->
+                        <button
+                            type="button"
+                            class="btn primary-btn pay-btn"
+                            id="payNowBtn"
+                        >
+                            Pay Now
+                        </button>
+
+
+                        <p class="secure-payment">
+                            🔒 Secure checkout
+                        </p>
+
+                        <p class="terms-text">
+                            By continuing, you agree to LearnHub's
+                            terms and conditions.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your career
+                    with LearnHub online courses.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">Courses</a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html">My Learning</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>Account</h3>
+
+                <ul>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">Register</a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: support@learnhub.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>India</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

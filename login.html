@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+```
+<!-- Responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login - LearnHub</title>
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="css/style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVIGATION BAR
+========================== -->
+<header>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="courses.html">Courses</a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">My Learning</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <!-- Authentication Buttons -->
+        <div class="nav-buttons">
+
+            <a
+                href="login.html"
+                class="btn login-btn"
+            >
+                Login
+            </a>
+
+            <a
+                href="register.html"
+                class="btn register-btn"
+            >
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     LOGIN SECTION
+========================== -->
+<main>
+
+    <section class="login-section">
+
+        <div class="login-container">
+
+
+            <!-- Login Header -->
+            <div class="form-header">
+
+                <p class="section-label">
+                    Welcome Back
+                </p>
+
+                <h1>
+                    Login to Your Account
+                </h1>
+
+                <p>
+                    Continue your learning journey with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Login Form -->
+            <form
+                id="loginForm"
+                class="login-form"
+            >
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="username"
+                        required
+                    >
+
+                    <small
+                        id="loginEmailError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <small
+                        id="loginPasswordError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Remember Me + Forgot Password -->
+                <div class="login-options">
+
+                    <div class="form-checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                            name="rememberMe"
+                        >
+
+                        <label for="rememberMe">
+                            Remember me
+                        </label>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        class="forgot-password"
+                    >
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    class="btn primary-btn login-submit"
+                >
+                    Login
+                </button>
+
+
+                <!-- Registration Link -->
+                <div class="form-footer">
+
+                    <p>
+                        Don't have an account?
+                        <a href="register.html">
+                            Create an account
+                        </a>
+                    </p>
+
+                </div>
+
+            </form>
+
+
+            <!-- Demo Login Information -->
+            <div class="login-info">
+
+                <p>
+                    New to LearnHub?
+                </p>
+
+                <a
+                    href="register.html"
+                    class="btn secondary-btn"
+                >
+                    Join LearnHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- Footer About -->
+        <div class="footer-column">
+
+            <h3>LearnHub</h3>
+
+            <p>
+                Learn new skills, build projects,
+                and achieve your career goals.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="courses.html">
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Account -->
+        <div class="footer-column">
+
+            <h3>Account</h3>
+
+            <ul>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="register.html">
+                        Register
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                Email: support@learnhub.com
+            </p>
+
+            <p>
+                Phone: +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 LearnHub.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Common JavaScript -->
+<script src="js/script.js"></script>
+```
+
+</body>
+
+</html>

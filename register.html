@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+```
+<!-- Responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register - LearnHub</title>
+
+<!-- Common CSS -->
+<link rel="stylesheet" href="css/style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- =========================
+     NAVIGATION BAR
+========================== -->
+<header>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html">LearnHub</a>
+        </div>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="courses.html">Courses</a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">My Learning</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <!-- Authentication Buttons -->
+        <div class="nav-buttons">
+
+            <a
+                href="login.html"
+                class="btn login-btn"
+            >
+                Login
+            </a>
+
+            <a
+                href="register.html"
+                class="btn register-btn"
+            >
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     REGISTRATION SECTION
+========================== -->
+<main>
+
+    <section class="register-section">
+
+        <div class="register-container">
+
+
+            <!-- Registration Heading -->
+            <div class="form-header">
+
+                <p class="section-label">
+                    Join LearnHub
+                </p>
+
+                <h1>
+                    Create Your Account
+                </h1>
+
+                <p>
+                    Register now and start your learning journey.
+                </p>
+
+            </div>
+
+
+            <!-- Registration Form -->
+            <form
+                id="registerForm"
+                class="register-form"
+            >
+
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <small
+                        id="fullNameError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <small
+                        id="emailError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                    >
+
+                    <small
+                        id="phoneError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                    <small
+                        id="passwordError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+
+                    <small
+                        id="confirmPasswordError"
+                        class="error-message"
+                    ></small>
+
+                </div>
+
+
+                <!-- Terms and Conditions -->
+                <div class="form-checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    <label for="terms">
+                        I agree to the
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                        and
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </label>
+
+                </div>
+
+
+                <!-- Register Button -->
+                <button
+                    type="submit"
+                    class="btn primary-btn register-submit"
+                >
+                    Create Account
+                </button>
+
+
+                <!-- Login Link -->
+                <div class="form-footer">
+
+                    <p>
+                        Already have an account?
+                        <a href="login.html">
+                            Login here
+                        </a>
+                    </p>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer>
+
+    <div class="footer-container">
+
+
+        <!-- Footer About -->
+        <div class="footer-column">
+
+            <h3>LearnHub</h3>
+
+            <p>
+                Learn new skills, build projects,
+                and achieve your career goals.
+            </p>
+
+        </div>
+
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="courses.html">
+                        Courses
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Account -->
+        <div class="footer-column">
+
+            <h3>Account</h3>
+
+            <ul>
+
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+
+                <li>
+                    <a href="register.html">
+                        Register
+                    </a>
+                </li>
+
+                <li>
+                    <a href="profile.html">
+                        Profile
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Contact -->
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                Email: support@learnhub.com
+            </p>
+
+            <p>
+                Phone: +91 98765 43210
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 LearnHub.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Common JavaScript -->
+<script src="js/script.js"></script>
+```
+
+</body>
+
+</html>

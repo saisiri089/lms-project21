@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson - LearnHub</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html" class="active">
+                        My Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         LESSON PAGE
+    ========================== -->
+    <main>
+
+        <section class="lesson-section">
+
+            <div class="lesson-container">
+
+
+                <!-- =========================
+                     LEFT CONTENT
+                ========================== -->
+                <div class="lesson-main">
+
+
+                    <!-- Course Name -->
+                    <div class="lesson-breadcrumb">
+
+                        <a href="dashboard.html">
+                            My Learning
+                        </a>
+
+                        <span> / </span>
+
+                        <span>
+                            Full Stack Web Development
+                        </span>
+
+                    </div>
+
+
+                    <!-- Lesson Title -->
+                    <div class="lesson-header">
+
+                        <span class="lesson-number">
+                            Lesson 16
+                        </span>
+
+                        <h1>
+                            Introduction to JavaScript
+                        </h1>
+
+                        <p>
+                            Learn the basics of JavaScript and
+                            understand how it makes websites interactive.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =========================
+                         VIDEO PLAYER
+                    ========================== -->
+                    <div class="video-container">
+
+                        <video
+                            controls
+                            poster="images/course1.jpg"
+                            class="lesson-video"
+                        >
+
+                            <source
+                                src="videos/sample-course.mp4"
+                                type="video/mp4"
+                            >
+
+                            Your browser does not support
+                            the video tag.
+
+                        </video>
+
+                    </div>
+
+
+                    <!-- Video Information -->
+                    <div class="video-info">
+
+                        <span>
+                            🎥 Video Lesson
+                        </span>
+
+                        <span>
+                            ⏱️ 15 minutes
+                        </span>
+
+                    </div>
+
+
+                    <!-- =========================
+                         LESSON ACTIONS
+                    ========================== -->
+                    <div class="lesson-actions">
+
+                        <button
+                            type="button"
+                            class="btn primary-btn"
+                            id="markCompleteBtn"
+                        >
+                            ✓ Mark as Complete
+                        </button>
+
+                    </div>
+
+
+                    <!-- =========================
+                         LESSON DESCRIPTION
+                    ========================== -->
+                    <div class="lesson-content">
+
+                        <h2>
+                            About This Lesson
+                        </h2>
+
+                        <p>
+                            In this lesson, you will learn the
+                            fundamentals of JavaScript and understand
+                            how JavaScript is used to add functionality
+                            and interactivity to websites.
+                        </p>
+
+                        <p>
+                            JavaScript is one of the most popular
+                            programming languages for web development.
+                            It works together with HTML and CSS to
+                            create modern interactive websites.
+                        </p>
+
+
+                        <h3>
+                            What You'll Learn
+                        </h3>
+
+                        <ul class="lesson-learning-list">
+
+                            <li>
+                                What is JavaScript?
+                            </li>
+
+                            <li>
+                                How JavaScript works in a browser
+                            </li>
+
+                            <li>
+                                JavaScript variables
+                            </li>
+
+                            <li>
+                                JavaScript data types
+                            </li>
+
+                            <li>
+                                Basic JavaScript syntax
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- =========================
+                         NOTES
+                    ========================== -->
+                    <div class="lesson-notes">
+
+                        <h2>
+                            My Notes
+                        </h2>
+
+                        <p>
+                            Write down important points from
+                            this lesson.
+                        </p>
+
+                        <textarea
+                            id="lessonNotes"
+                            placeholder="Write your notes here..."
+                            rows="8"
+                        ></textarea>
+
+                        <button
+                            type="button"
+                            class="secondary-btn"
+                            id="saveNotesBtn"
+                        >
+                            Save Notes
+                        </button>
+
+                        <p
+                            id="notesMessage"
+                            class="notes-message"
+                        ></p>
+
+                    </div>
+
+
+                    <!-- =========================
+                         PREVIOUS / NEXT
+                    ========================== -->
+                    <div class="lesson-navigation">
+
+                        <a
+                            href="#"
+                            class="lesson-nav-btn"
+                        >
+                            ← Previous Lesson
+                        </a>
+
+
+                        <a
+                            href="#"
+                            class="lesson-nav-btn"
+                            id="nextLessonBtn"
+                        >
+                            Next Lesson →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     RIGHT SIDEBAR
+                ========================== -->
+                <aside class="lesson-sidebar">
+
+
+                    <!-- Course Information -->
+                    <div class="lesson-course-info">
+
+                        <h2>
+                            Full Stack Web Development
+                        </h2>
+
+                        <p>
+                            Your Course Progress
+                        </p>
+
+
+                        <!-- Progress -->
+                        <div class="sidebar-progress-info">
+
+                            <span>
+                                65% Complete
+                            </span>
+
+                            <span>
+                                15 / 24
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress"
+                                style="width: 65%;"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =========================
+                         CURRICULUM
+                    ========================== -->
+                    <div class="curriculum-sidebar">
+
+                        <h2>
+                            Course Curriculum
+                        </h2>
+
+
+                        <!-- Section 1 -->
+                        <div class="curriculum-section">
+
+                            <h3>
+                                Section 1: HTML Basics
+                            </h3>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                Introduction to HTML
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                HTML Elements
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                HTML Forms
+                            </a>
+
+                        </div>
+
+
+                        <!-- Section 2 -->
+                        <div class="curriculum-section">
+
+                            <h3>
+                                Section 2: CSS Basics
+                            </h3>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                Introduction to CSS
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                CSS Selectors
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                Flexbox
+                            </a>
+
+                        </div>
+
+
+                        <!-- Section 3 -->
+                        <div class="curriculum-section">
+
+                            <h3>
+                                Section 3: JavaScript
+                            </h3>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson completed"
+                            >
+                                <span>✓</span>
+                                JavaScript Basics
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson active-lesson"
+                            >
+                                <span>▶</span>
+                                Introduction to JavaScript
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson"
+                            >
+                                <span>○</span>
+                                Variables
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson"
+                            >
+                                <span>○</span>
+                                Data Types
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson"
+                            >
+                                <span>○</span>
+                                Functions
+                            </a>
+
+                        </div>
+
+
+                        <!-- Section 4 -->
+                        <div class="curriculum-section">
+
+                            <h3>
+                                Section 4: Advanced JavaScript
+                            </h3>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson"
+                            >
+                                <span>○</span>
+                                DOM Manipulation
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson"
+                            >
+                                <span>○</span>
+                                Events
+                            </a>
+
+                            <a
+                                href="#"
+                                class="curriculum-lesson"
+                            >
+                                <span>○</span>
+                                API Integration
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>
+                    LearnHub
+                </h3>
+
+                <p>
+                    Learn new skills and build your career
+                    with LearnHub online courses.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html">
+                            My Learning
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html">
+                            Profile
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    Email: support@learnhub.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
