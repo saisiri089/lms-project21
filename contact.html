@@ -3,166 +3,219 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Contact Us - LearnHub</title>
 
-    <!-- Common CSS -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
 
-
-    <!-- =========================
+    <!-- =====================================================
          NAVBAR
-    ========================== -->
+    ====================================================== -->
 
-    <header>
+    <header class="navbar">
 
-        <nav class="navbar">
-
+        <div class="navbar-container">
 
             <!-- Logo -->
-
             <div class="logo">
-
-                <a href="index.html">
-                    LearnHub
-                </a>
-
+                <a href="index.html">LearnHub</a>
             </div>
 
 
-            <!-- Navigation Links -->
+            <!-- Navigation -->
+            <nav class="nav-links">
 
-            <ul class="nav-links">
+                <a href="index.html">
+                    Home
+                </a>
 
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
+                <a href="courses.html">
+                    Courses
+                </a>
 
-                <li>
-                    <a href="courses.html">
-                        Courses
-                    </a>
-                </li>
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
 
-                <li>
-                    <a href="dashboard.html">
-                        My Learning
-                    </a>
-                </li>
+                <a href="profile.html">
+                    Profile
+                </a>
 
-                <li>
-                    <a
-                        href="contact.html"
-                        class="active"
-                    >
-                        Contact
-                    </a>
-                </li>
+                <a href="contact.html" class="active">
+                    Contact
+                </a>
 
-            </ul>
-
-
-            <!-- Navigation Buttons -->
-
-            <div class="nav-buttons">
-
-                <a
-                    href="login.html"
-                    class="login-btn"
-                >
+                <a href="login.html" class="nav-login">
                     Login
                 </a>
 
-                <a
-                    href="register.html"
-                    class="register-btn"
-                >
+                <a href="register.html" class="nav-register">
                     Register
                 </a>
 
-            </div>
+            </nav>
 
-        </nav>
+        </div>
 
     </header>
 
 
+    <!-- =====================================================
+         CONTACT HERO
+    ====================================================== -->
 
-    <!-- =========================
-         MAIN CONTENT
-    ========================== -->
+    <section class="page-hero">
 
-    <main>
+        <div class="container">
 
+            <h1>Contact Us</h1>
 
-        <!-- =========================
-             CONTACT HERO
-        ========================== -->
+            <p>
+                Have a question? We're here to help.
+                Get in touch with the LearnHub team.
+            </p>
 
-        <section class="contact-hero">
+        </div>
 
-            <div class="contact-container">
-
-                <span class="section-tag">
-                    GET IN TOUCH
-                </span>
-
-                <h1>
-                    How Can We Help You?
-                </h1>
-
-                <p>
-                    Have a question about our courses,
-                    payments, or your account?
-                    Send us a message and our team
-                    will get back to you.
-                </p>
-
-            </div>
-
-        </section>
+    </section>
 
 
+    <!-- =====================================================
+         CONTACT SECTION
+    ====================================================== -->
 
-        <!-- =========================
-             CONTACT CONTENT
-        ========================== -->
+    <section class="contact-section">
 
-        <section class="contact-section">
+        <div class="container">
 
-            <div class="contact-container contact-grid">
+            <div class="contact-grid">
 
 
-                <!-- =========================
-                     CONTACT FORM
-                ========================== -->
+                <!-- =================================================
+                     CONTACT INFORMATION
+                ================================================== -->
 
-                <div class="contact-form-box">
+                <div class="contact-info">
 
-                    <h2>
-                        Send Us a Message
-                    </h2>
+                    <h2>Get In Touch</h2>
 
                     <p>
-                        Fill out the form below and
-                        we'll get back to you soon.
+                        If you have any questions about our courses,
+                        payments, account, or learning platform,
+                        feel free to contact us.
+                    </p>
+
+
+                    <!-- Email -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+                            <h3>Email</h3>
+
+                            <p>
+                                support@learnhub.com
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+                            <h3>Phone</h3>
+
+                            <p>
+                                +91 98765 43210
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Address -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <h3>Address</h3>
+
+                            <p>
+                                Hyderabad, Telangana, India
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Working Hours -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            🕐
+                        </div>
+
+                        <div>
+                            <h3>Working Hours</h3>
+
+                            <p>
+                                Monday - Saturday
+                            </p>
+
+                            <p>
+                                9:00 AM - 6:00 PM
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTACT FORM
+                ================================================== -->
+
+                <div class="contact-form-container">
+
+                    <h2>Send Us a Message</h2>
+
+                    <p>
+                        Fill out the form below and our team
+                        will get back to you.
                     </p>
 
 
@@ -170,7 +223,6 @@
 
 
                         <!-- Name -->
-
                         <div class="form-group">
 
                             <label for="contactName">
@@ -180,21 +232,19 @@
                             <input
                                 type="text"
                                 id="contactName"
+                                name="contactName"
                                 placeholder="Enter your full name"
-                                required
                             >
 
                             <small
                                 id="contactNameError"
-                                class="form-error"
-                            ></small>
+                                class="error-message">
+                            </small>
 
                         </div>
 
 
-
                         <!-- Email -->
-
                         <div class="form-group">
 
                             <label for="contactEmail">
@@ -204,21 +254,19 @@
                             <input
                                 type="email"
                                 id="contactEmail"
-                                placeholder="Enter your email"
-                                required
+                                name="contactEmail"
+                                placeholder="Enter your email address"
                             >
 
                             <small
                                 id="contactEmailError"
-                                class="form-error"
-                            ></small>
+                                class="error-message">
+                            </small>
 
                         </div>
 
 
-
                         <!-- Subject -->
-
                         <div class="form-group">
 
                             <label for="contactSubject">
@@ -228,21 +276,19 @@
                             <input
                                 type="text"
                                 id="contactSubject"
-                                placeholder="Enter message subject"
-                                required
+                                name="contactSubject"
+                                placeholder="Enter your subject"
                             >
 
                             <small
                                 id="contactSubjectError"
-                                class="form-error"
-                            ></small>
+                                class="error-message">
+                            </small>
 
                         </div>
 
 
-
                         <!-- Category -->
-
                         <div class="form-group">
 
                             <label for="contactCategory">
@@ -251,8 +297,7 @@
 
                             <select
                                 id="contactCategory"
-                                required
-                            >
+                                name="contactCategory">
 
                                 <option value="">
                                     Select a category
@@ -283,9 +328,7 @@
                         </div>
 
 
-
                         <!-- Message -->
-
                         <div class="form-group">
 
                             <label for="contactMessage">
@@ -294,237 +337,371 @@
 
                             <textarea
                                 id="contactMessage"
-                                rows="7"
+                                name="contactMessage"
+                                rows="6"
                                 placeholder="Write your message here..."
-                                required
                             ></textarea>
 
                             <small
                                 id="contactMessageError"
-                                class="form-error"
-                            ></small>
+                                class="error-message">
+                            </small>
 
                         </div>
 
 
-
-                        <!-- Submit -->
-
-                        <button
-                            type="submit"
-                            class="btn primary-btn contact-submit-btn"
-                        >
-                            Send Message
-                        </button>
-
-
                         <!-- Success Message -->
-
-                        <p
+                        <div
                             id="contactSuccessMessage"
                             class="success-message"
-                        ></p>
+                            style="display: none;">
+
+                            Your message has been sent
+                            successfully!
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button
+                            type="submit"
+                            class="btn primary-btn">
+
+                            Send Message
+
+                        </button>
 
                     </form>
 
                 </div>
 
+            </div>
+
+        </div>
+
+    </section>
 
 
-                <!-- =========================
-                     CONTACT INFORMATION
-                ========================== -->
+    <!-- =====================================================
+         FAQ SECTION
+    ====================================================== -->
 
-                <div class="contact-info-box">
+    <section class="faq-section">
 
+        <div class="container">
 
-                    <!-- Email -->
+            <div class="section-header">
 
-                    <div class="contact-info-card">
+                <h2>Frequently Asked Questions</h2>
 
-                        <div class="contact-icon">
-                            📧
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Email Us
-                            </h3>
-
-                            <p>
-                                support@learnhub.com
-                            </p>
-
-                            <a href="mailto:support@learnhub.com">
-                                Send Email →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Phone -->
-
-                    <div class="contact-info-card">
-
-                        <div class="contact-icon">
-                            📞
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Call Us
-                            </h3>
-
-                            <p>
-                                +91 98765 43210
-                            </p>
-
-                            <span>
-                                Mon - Fri, 9 AM - 6 PM
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Location -->
-
-                    <div class="contact-info-card">
-
-                        <div class="contact-icon">
-                            📍
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Our Location
-                            </h3>
-
-                            <p>
-                                Hyderabad, Telangana
-                            </p>
-
-                            <span>
-                                India
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Support -->
-
-                    <div class="contact-info-card">
-
-                        <div class="contact-icon">
-                            💬
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Support
-                            </h3>
-
-                            <p>
-                                Need technical help?
-                            </p>
-
-                            <span>
-                                Our support team is here
-                                to help you.
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- Social Media -->
-
-                    <div class="contact-social">
-
-                        <h3>
-                            Follow LearnHub
-                        </h3>
-
-                        <p>
-                            Stay updated with our latest
-                            courses and announcements.
-                        </p>
-
-
-                        <div class="social-links">
-
-                            <a href="#">
-                                Facebook
-                            </a>
-
-                            <a href="#">
-                                Instagram
-                            </a>
-
-                            <a href="#">
-                                LinkedIn
-                            </a>
-
-                            <a href="#">
-                                YouTube
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                <p>
+                    Find answers to some common questions
+                    about LearnHub.
+                </p>
 
             </div>
 
-        </section>
+
+            <div class="faq-container">
 
 
+                <!-- FAQ 1 -->
+                <div class="faq-item">
 
-        <!-- =========================
-             FAQ SECTION
-        ========================== -->
+                    <button
+                        type="button"
+                        class="faq-question">
 
-        <section class="faq-section">
+                        <span>
+                            How do I enroll in a course?
+                        </span>
 
-            <div class="contact-container">
+                        <span class="faq-icon">
+                            +
+                        </span>
 
+                    </button>
 
-                <div class="section-heading center-heading">
+                    <div class="faq-answer">
 
-                    <span class="section-tag">
-                        FAQ
-                    </span>
+                        <p>
+                            Browse our courses, select the course
+                            you are interested in, and click the
+                            "Enroll Now" button. Follow the payment
+                            steps to complete your enrollment.
+                        </p>
 
-                    <h2>
-                        Frequently Asked Questions
-                    </h2>
-
-                    <p>
-                        Find answers to some of the
-                        most common questions.
-                    </p>
+                    </div>
 
                 </div>
 
 
+                <!-- FAQ 2 -->
+                <div class="faq-item">
 
-                <div class="faq-container">
+                    <button
+                        type="button"
+                        class="faq-question">
+
+                        <span>
+                            Do I get a certificate after completing
+                            a course?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. After successfully completing all
+                            lessons in an eligible course, students
+                            can receive a course completion
+                            certificate.
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-                    <!--
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question">
+
+                        <span>
+                            Can I access courses on mobile?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Yes. LearnHub is designed to work on
+                            desktops, tablets, and mobile devices.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question">
+
+                        <span>
+                            What payment methods are supported?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            The current project uses a demo payment
+                            system. A real application can later
+                            integrate payment gateways such as
+                            Razorpay or Stripe.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question">
+
+                        <span>
+                            How can I reset my password?
+                        </span>
+
+                        <span class="faq-icon">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            In a production application, you can use
+                            the "Forgot Password" option on the login
+                            page to receive a password reset link.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CALL TO ACTION
+    ====================================================== -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <h2>Ready to Start Learning?</h2>
+
+            <p>
+                Explore our courses and start building
+                your skills today.
+            </p>
+
+            <a
+                href="courses.html"
+                class="btn primary-btn">
+
+                Explore Courses
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills, improve your knowledge,
+                    and build your future with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+            <div class="footer-column">
+
+                <h3>Account</h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+                    support@learnhub.com
+                </p>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    Hyderabad, India
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span class="current-year">2026</span>
+                LearnHub. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
 ```
